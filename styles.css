@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header h2 {
+  text-align: center;
+  color: #333333;
+  margin: 6px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.left_section {
+  max-width: 700px;
+  width: 100%;
+}
+.right_section {
+  background: #efefef;
+  max-width: 260px;
+  width: 100%;
+  text-align: center;
+}
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#list li {
+  float: left;
+  /* max-width: 222px; */
+  height: 200px;
+  width: 33.33%;
+  position: relative;
+}
+li p {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: #fff;
+}
+.light {
+  background: #6f98ab;
+}
+.medium {
+  background: #288ead;
+}
+.grey {
+  background: #bfbfbf;
+}
+.dark {
+  background: #2f454e;
+}
+button {
+  background: #72c3dc;
+  color: #fff;
+  border: 0;
+  padding: 14px;
+  width: 150px;
+  margin-top: 35px;
+  cursor: pointer;
+  box-shadow: 0px 9px 6px #afafaf;
+}
+.bottom_text {
+  margin: 10px 0 0 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+  h2 {
+    margin: 0 !important;
+    background: #333333;
+    color: #fff !important;
+    padding: 10px;
+  }
+  #list li {
+    width: 100%;
+    height: 40px;
+    background: #dedede;
+    margin-bottom: 7px;
+  }
+  .right_section {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+  }
+  button {
+    margin-top: 15px;
+  }
+  #list {
+    margin-top: 80px;
+  }
+  li p {
+    font-size: 26px;
+    color: #333333;
+  }
+  .light::before {
+    content: "";
+    background: #6f98ab;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+  }
+  .medium::before {
+    content: "";
+    background: #288ead;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+  }
+  .grey::before {
+    content: "";
+    background: #bfbfbf;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+  }
+  .dark::before {
+    content: "";
+    background: #2f454e;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+  }
+}
